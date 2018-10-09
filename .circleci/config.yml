@@ -9,8 +9,6 @@ jobs:
       - checkout
       - setup_remote_docker
       - run:
-          command: ls -la
-      - run:
           name: Dependencies
           command: docker build -t puckel/docker-airflow .
   test:
